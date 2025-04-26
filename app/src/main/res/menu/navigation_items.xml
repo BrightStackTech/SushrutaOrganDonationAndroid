@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="HELPLINE">
+        <menu>
+            <item
+                android:id="@+id/optHelpLine"
+                android:title="Helpline No."
+                android:icon="@drawable/baseline_call_24" />
+        </menu>
+    </item>
+
+    <item
+        android:title="TABS">
+        <menu>
+            <item
+                android:id="@+id/optHome"
+                android:title="Home"
+                android:icon="@drawable/baseline2_home_24"/>
+
+            <item
+                android:id="@+id/optWebsite"
+                android:title="Website"
+                android:icon="@drawable/language"/>
+
+            <item
+                android:id="@+id/optAboutUs"
+                android:title="About Us"
+                android:icon="@drawable/info"/>
+
+        </menu>
+    </item>
+
+
+    <item
+        android:title="USER">
+        <menu>
+            <item
+                android:id="@+id/optProfile"
+                android:title="Your Profile"
+                android:icon="@drawable/ic_baseline_person_24"/>
+            <item
+                android:id="@+id/optLogOut"
+                android:title="Log Out"
+                android:icon="@drawable/baseline_logout_24"/>
+        </menu>
+    </item>
+
+</menu>

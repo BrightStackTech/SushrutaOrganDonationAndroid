@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsFragment"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sushruta"
+        android:textAlignment="center"
+        android:textColor="#4f4f4f"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sushruta is a Non-Profit, Registered Non-Government Charity Organization in India that works in the field of deceased organ donation and Transplantation.\n
+                                            Sushruta comes from the name of a great Indian scholar Maharishi Sushruta, who is also know as the Father of Surgeory."
+        android:textAlignment="textStart"
+        android:textColor="#4f4f4f"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By :"
+        android:textAlignment="center"
+        android:textColor="#4f4f4f"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group11 Ltd"
+        android:textAlignment="center"
+        android:textColor="#4f4f4f"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developers :"
+        android:textAlignment="center"
+        android:textColor="#4f4f4f"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arnav Tambe"
+        android:textAlignment="center"
+        android:textColor="#4f4f4f"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vasaikar Yog"
+        android:textAlignment="center"
+        android:textColor="#4f4f4f"
+        android:textSize="25dp"
+        android:paddingLeft="20dp"/>
+
+</LinearLayout>

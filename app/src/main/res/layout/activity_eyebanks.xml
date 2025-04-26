@@ -1,0 +1,2108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EyebanksActivity"
+    android:background="#dae0e7"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/app_bar_2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@color/purple_500">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sushruta"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.2"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.521" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="43dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:src="@drawable/sushruta1"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.036"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.52" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:id="@+id/Searchcard">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:queryHint="City Name/ State Name"
+            app:iconifiedByDefault="false"
+            android:id="@+id/search_view">
+
+        </androidx.appcompat.widget.SearchView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/HospitalsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="70dp">-->
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:background="#dae0e7"-->
+<!--            android:paddingBottom="50dp">-->
+
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                app:cardBackgroundColor="@color/white"-->
+<!--                android:layout_marginTop="30dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM1">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="ADITYA JYOTI EYE HOSPITAL"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM2">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Arpan Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM3">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="B.Y.L Nair Charitable Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM4">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Conwest Jain Group of Hospital Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM5">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM5"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Dr L H Hiranandani Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM5"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM6">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM6"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Dr R N Cooper Hospital and Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM6"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM7">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM7"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Eye Bank coordination And Research Centre"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM7"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM8">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Fortis Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM9">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM9"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="GOKHALE EYE HOSPITAL"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM9"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM10">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM10"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="K.J.Somaiya Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM10"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM11">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM11"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="K.E.M Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM11"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM12">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM12"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Kandivali Eye Donation"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM12"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM13">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM13"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Lotus Eye Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewM13"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM14">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewM14"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mahatme Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextView14"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM15">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewO"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Navnit Shah Eyebank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewO"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM16">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewP"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="P D Hinduja Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewP"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM17">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewQ"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Rajawadi Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewQ"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM18">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewS"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Samarpan Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewS"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM19">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewT"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Shroff Eye Clinic"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewT"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutM20">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewU"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Tarun Mitra Mandal"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewU"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:id="@+id/layoutT1">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Cardinal Gracias Memorial Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Thane"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutT2"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Matrushree Gomtiben Ratanshi cheda Sahiyara Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Thane"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutNM1"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="D Y PATIL HOSPITAL"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Navi Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutNV2"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Laxmi Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Navi Mumbai"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutN1"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewN1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="ICARE Eye Hospital and Post Graaduate Institute"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewN1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Noida"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND1"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="A.EDWARD MAUMENEE EYE BANK"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND2"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="CENTRE FOR SIGHT"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND3"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Dr Shroff Charity Eye Hospital"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND4"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="GURU GOBIND SINGH EYE BANK"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND5"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND5"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Guru Nanak Eye Centre"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND5"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND6"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND6"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="INDRAPRASTA APOLLO HOSPITAL"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND6"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND7"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND7"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Sight Life India"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND7"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutND8"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewND8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Venu Eye Institute"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewND8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="New Delhi"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutK1"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="DISHA EYE HOSPITAL"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Kolkata"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutK2"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:id="@+id/textViewK2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="International Eye Bank"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/minitextViewK2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Kolkata"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutK3"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Sankara Nethralaya"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Kolkata"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutK4"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Susrut Eye Foundation"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Kolkata"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutA1"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="ASO PALOV EYE BANK"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Ahemdabad"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutA2"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="DR DHANIJISHA ANKLESARIA EYE BANK"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Kolkata"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutNA1"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="LATA MANGESHKAR HOSPITAL"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Nagpur"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutNA2"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="MADHAV NETRA PEDHI"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Nagpur"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutNA3"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="MAHATMA EYE BANK"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Nagpur"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutNA4"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="SURAJ EYE BANK"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Nagpur"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#fff"-->
+<!--                app:cardElevation="4dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_gravity="fill"-->
+<!--                android:layout_marginTop="5dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:paddingStart="10dp"-->
+<!--                    android:paddingEnd="10dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/layoutP1"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_marginTop="2dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="GRANT MEDICAL RUBY HALL CLINIC"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="25dp"-->
+<!--                        android:textColor="#6b6f73" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:text="Pune"-->
+<!--                        android:textAlignment="viewStart"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="20dp"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+
+
+</LinearLayout>

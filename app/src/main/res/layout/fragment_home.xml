@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/titleMain"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:background="@color/purple_500">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textView1"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:text="Sushruta"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.01"-->
+        <!--                app:layout_constraintStart_toEndOf="@+id/imageView"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:layout_constraintVertical_bias="0.521" />-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/imageView"-->
+        <!--                android:layout_width="43dp"-->
+        <!--                android:layout_height="45dp"-->
+        <!--                android:src="@drawable/sushruta1"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.036"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:layout_constraintVertical_bias="0.52" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/titleHome"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="70dp"-->
+        <!--            android:layout_below="@id/titleMain"-->
+        <!--            android:background="@color/purple_700">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/textView2"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Home"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="#fff"-->
+        <!--                android:textSize="30sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.501"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:layout_constraintVertical_bias="0.555" />-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="43dp"-->
+        <!--                android:layout_height="45dp"-->
+        <!--                android:src="@drawable/menu"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintHorizontal_bias="0.036"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:layout_constraintVertical_bias="0.52" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLabTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/Blue"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="114dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/eyebanks"
+                        android:layout_width="93dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/eye_banks" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EYE BANKS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBuyMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/Blue"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/skinbanks"
+                        android:layout_width="86dp"
+                        android:layout_height="98dp"
+                        android:src="@drawable/skin_banks" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SKIN BANKS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFindDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/Blue"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="137dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bodybanks"
+                        android:layout_width="97dp"
+                        android:layout_height="117dp"
+                        android:src="@drawable/body_donation" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BODY DONATION"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHealthDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/Blue"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/organbanks"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/hospitals" />
+
+                    <TextView
+                        android:layout_width="134dp"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="-5dp"
+                        android:text="ORGAN TRANSPLANT HOSPITALS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOrderDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/Blue"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="143dp"
+                    android:layout_height="149dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ngobanks"
+                        android:layout_width="99dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ngo_img" />
+
+                    <TextView
+                        android:layout_width="131dp"
+                        android:layout_height="58dp"
+                        android:text="NON-GOVERNMENTAL ORGANISATIONS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardBackgroundColor="@color/Blue"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/gobanks"
+                        android:layout_width="89dp"
+                        android:layout_height="109dp"
+                        android:src="@drawable/govt_img" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:text="GOVERNMENTAL ORGANISATIONS"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

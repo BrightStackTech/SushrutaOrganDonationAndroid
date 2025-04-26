@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Scan this QR CODE"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/qr_code"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sushruta"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+

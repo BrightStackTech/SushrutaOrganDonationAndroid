@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+        <item android:title="Share"
+            android:id="@+id/share_menu"
+            android:icon="@drawable/baseline_share_24"
+            android:showAsAction="always">
+            <menu>
+                <item
+                    android:id="@+id/share_online"
+                    android:title="Share online"/>
+                <item
+                    android:id="@+id/share_qr"
+                    android:title="Share via QR Code"/>
+            </menu>
+        </item>
+        <item android:id="@+id/rate"
+            android:title="Rate Us"/>
+        <item android:id="@+id/exit"
+            android:title="Exit App"/>
+</menu>

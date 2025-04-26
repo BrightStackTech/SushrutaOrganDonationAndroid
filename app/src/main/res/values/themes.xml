@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DaanDharma" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/white</item>-->
+<!--        <item name="iconTint">@color/white</item>-->
+    </style>
+
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:icon">@color/white</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="iconTint">@color/white</item>
+    </style>
+
+
+
+
+
+    <style name="Theme.DaanDharma" parent="Base.Theme.DaanDharma" />
+</resources>
