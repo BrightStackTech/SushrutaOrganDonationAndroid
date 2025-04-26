@@ -28,7 +28,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAIUnqHTvoh9B7VkzlrwXJI3Xs-1SbneUo" />
+            android:value="YOUR_GEO_API_KEY" />
 
         <activity
             android:name=".OTHospitalsActivity"
